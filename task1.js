@@ -74,12 +74,19 @@ function calculateAverage(indonesian, english, math, science) {
   function getValue(indonesian, english, math, science) {
     let average = calculateAverage(indonesian, english, math, science);
     let grade = getGrade(average);
+
+
+    if(isNaN(indonesian) || isNaN(english) || isNaN(math) || isNaN(science)){
+      // console.log(`value yang kamu masukan bukan angka. silakan coba lagi`)
+    } else {
+      // console.log("Rata-rata: " + average);
+      // console.log("Grade: " + grade);
+    }
   
-    // console.log("Rata-rata: " + average);
-    // console.log("Grade: " + grade);
+    
   }
   
-  getValue(80, 70, 90, 60);
+  getValue(90, 70, 90, 60);
   
 
 // Buatlah program yang memiliki satu variabel dengan nama “printSegitiga” yg berisi tipe data number yang menghasilkan output segitiga terbalik yang berisi angka
